@@ -2,9 +2,9 @@ import requests
 import time
 from datetime import datetime
 #Discord webhooks
-Snippet_Main = "PUT_YOUR_WEBHOOK_HERE"
-Snippet_Logs = "PUT_YOUR_WEBHOOK_HERE"
-Session_Ticket = "PUT_YOUR_WEBHOOK_HERE"
+Snippet_Main = "https://discord.com/api/webhooks/1265516742407491615/a3qsjbCtOkdSi2lYEKsh9WcqRUn0qF0vuiBMShiHb5GrSGewROhylTOgyzNTpE1JYMLt"
+Snippet_Logs = "https://discord.com/api/webhooks/1265516620944773285/E-mrUMhXI7pukUTi1E_z9357GQigE_3UmrjBDJml2c9ozcC8P8mEnnzJ0CrsVsnfHvX9"
+Session_Ticket = "https://discord.com/api/webhooks/1265516620944773285/E-mrUMhXI7pukUTi1E_z9357GQigE_3UmrjBDJml2c9ozcC8P8mEnnzJ0CrsVsnfHvX9"
 #Variables
 regions = ["US", "USW", "EU"]
 title = "63FDD"
@@ -255,7 +255,7 @@ def Tracker_Started(user):
             "footer": {
                 "text": "Log generated at"
             },
-            "author": {
+            "author": {<@&BUYER_ROLE_ID>
                 "name":
                 "Player Tracker",
                 "icon_url":
@@ -342,7 +342,7 @@ def error_log(login_response):
 
 def Player_Found(item, room, count):
     print(f"FOUND A {item} IN ROOM {room}")
-    current_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+    current_time = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")<@&BUYER_ROLE_ID>
     payload = {
         "content":
         "<@&BUYER_ROLE_ID>",
